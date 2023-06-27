@@ -1,5 +1,7 @@
+//importamos o mongoose para termos acesso ao mongoDB pela aplicação
 import mongoose from "mongoose";
 
+//cria-se um modelo de alunos para ser usado pelo sistema
 const alunoSchema = new mongoose.Schema(
     {
         id:{type: String},
@@ -15,5 +17,5 @@ const alunoSchema = new mongoose.Schema(
 )
 
 const alunos = mongoose.model('alunos',alunoSchema);
-
+//exportamos então o modelo criado 
 export default alunos;

@@ -4,7 +4,7 @@ import AlunoController from "../controllers/alunosController.js";
 
 
 const router = express.Router();
-
+//criamos uma rota para acessar as funções que serão usadas pelo aplicação 
 router
     .get("/alunos/list",AlunoController.listarAlunos)
     .get("/alunos/list/:id",AlunoController.buscarAluno)
